@@ -10,7 +10,9 @@ const app = express();
 
 const cors = require("cors");
 
-app.use(cors());
+app.use(
+  cors({ origin: "https://mern-dashboard-nu.vercel.app", credentials: true })
+);
 
 app.use("/api/data", router);
 

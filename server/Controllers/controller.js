@@ -1,8 +1,5 @@
 const DataModel = require("../Model/Model");
-const { convertArrayToObject } = require("../Utils/ConvertArrayToObject");
-const {
-  createObjectFromArrayPairs,
-} = require("../Utils/createObjectFromArrayPairs");
+const createObjectFromArrayPairs = require("../Utils/CreateObjectFromArrayPairs");
 
 // //-------get filtered data-------
 const getAllDataPaginated = async (req, res) => {

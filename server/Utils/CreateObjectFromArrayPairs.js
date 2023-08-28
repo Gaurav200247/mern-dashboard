@@ -12,4 +12,4 @@ function createObjectFromArrayPairs(keysArray, valuesArray) {
   return resultObject;
 }
 
-module.exports = { createObjectFromArrayPairs };
+module.exports = createObjectFromArrayPairs;

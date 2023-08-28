@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chart-container {
+  width: 100%; /* This makes the container take up the full width */
+}
+
+canvas {
+  width: 100%; /* This makes the canvas take up the full width within its parent container */
+  height: auto; /* Maintain the canvas's aspect ratio */
+}
+
+* {
+  font-family: "Public Sans", sans-serif;
+}
+
+.sidebar {
+  @apply flex flex-col justify-start items-start;
+}
+.Pages-links_container {
+  @apply w-full flex flex-col  justify-between items-start mt-5;
+}
+
+.Pages-links_container > p {
+  @apply text-zinc-600 text-[0.8rem] dark:text-slate-400;
+}
+
+.Pages-links_container > ul {
+  @apply w-full flex flex-col justify-between items-start;
+}
+
+.sidebar_links {
+  @apply font-medium p-2 my-1 hover:text-black dark:hover:text-white hover:bg-blue-200 dark:hover:bg-slate-700 hover:shadow-md duration-200 rounded-md truncate;
+}
+
+/* navbar */
+.nav_option {
+  @apply p-2 rounded-full flex justify-center items-center;
+}
+.circle {
+  @apply rounded-full p-1;
+}
+.notification_indicator {
+  @apply text-[0.8rem] w-[1.2rem] h-[1.2rem]  text-white  bg-red-500 rounded-full p-2 flex justify-center items-center font-semibold;
+}
+
+/* modal */
+.modalInput {
+  @apply w-[80%] outline-none p-2 dark:bg-[#1b2a4b];
+}
+.modal_links_container {
+  @apply flex flex-col justify-start items-start w-full  rounded-md shadow-md border-2 dark:border-gray-600 p-2;
+}
+.modal_links_container > p {
+  @apply text-gray-600 dark:text-gray-400 font-medium text-[0.8rem];
+}
+.modal_links_container > ul {
+  @apply p-1 px-4 flex flex-col justify-between items-start;
+}
+.modal_links {
+  @apply mb-2 px-2 py-1 bg-gray-100 dark:bg-[#28385a] rounded-sm text-[0.8rem] duration-200 font-medium hover:bg-gray-300 dark:hover:bg-[#304470] hover:shadow-sm;
+}
+
+/* dashboard */
+.dashboard_blocks {
+  @apply h-full border-2 dark:border-gray-600 rounded-md shadow-md;
+}
+.RangeButton {
+  @apply p-2 rounded-md shadow-sm text-[2rem] mx-3 cursor-pointer font-bold duration-200 bg-[#0000ffc3] hover:bg-[#4444d4d6] text-white;
+}
+.PageButton {
+  @apply p-2 rounded-md shadow-sm text-[2rem] mx-3 cursor-pointer font-bold duration-200 bg-gray-300 hover:bg-gray-400 text-black dark:bg-blue-900 dark:hover:bg-blue-800 dark:text-white;
+}
+
+/* filters  */
+#controllable-states-demo {
+  @apply dark:text-white dark:placeholder-white;
+}
+label {
+  @apply dark:text-gray-300 dark:border-zinc-300;
+}

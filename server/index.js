@@ -1,6 +1,6 @@
 require("express-async-errors");
 if (process.env.NODE_ENV !== "PRODUCTION") {
-  require("dotenv").config();
+  require("dotenv").config({ path: "server/.env" });
 }
 
 const express = require("express");
